@@ -14,8 +14,8 @@ github_username:  florianschmitt
 gplus_username:  lorem_ipsum
 
 # Google-analytics
-# google-analytics:
-#   id: ""
+google-analytics:
+  id: "UA-107368427-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
 include: ['_pages', '_data']

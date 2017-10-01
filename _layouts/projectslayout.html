@@ -8,10 +8,11 @@
         {% for project in site.data.projects %}
           {% include singleproject.html %}
           {% if forloop.rindex > 1%}
-          <hr>
+            <hr>
           {% endif %}
         {% endfor %}
-    </div>
+        <br>
+      </div>
     </section>
     {% include footer.html %}
   </body>
