@@ -1,0 +1,8 @@
+---
+layout: project
+title: Projekt
+permalink: /projectevita/
+projectId: evita
+---
+{% assign project = site.data.projects | where:"id",page.projectId | first %}
+{% include singleproject.html %}

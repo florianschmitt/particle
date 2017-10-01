@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include navigation.html %}
+    <section id="projects" class="content-container">
+      <div class="container">
+        {% for project in site.data.projects %}
+          {% include singleproject.html %}
+          {% if forloop.rindex > 1%}
+          <hr>
+          {% endif %}
+        {% endfor %}
+    </div>
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

@@ -10,6 +10,64 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.icon {
+  width: 75px;
+  height: 75px;
+}
+
+.icon-mini {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+}
+
+.icon-wider {
+  width: 150px;
+  height: 75px;
+}
+
+.icon-display {
+  display: inline-block;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.icon-link {
+  display: inline-block;
+  padding: 1px;
+  color: $main;
+  font-size: 1.5em;
+  line-height: 22px;
+  // border: 1px solid $main;
+  //border-radius: 10px;
+  background-color: transparent;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  &:hover {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+  &:active {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+}
+
 @-webkit-keyframes pulse {
     from {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
@@ -58,7 +116,7 @@ body {
   background: $main;
   display: block;
   vertical-align: bottom;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,6 +125,15 @@ body {
     width:100vw !important;
     height:100vh !important;
   }
+}
+
+.content-container {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 150px;
+    @media screen and (min-width: 500px){
+      overflow-x: hidden;
+    }
 }
 
 .content {
@@ -185,7 +252,7 @@ body {
   }
 }
 
-.user-details {
+.section-header {
   text-align: center;
   font-size: 16px;
   margin: 10px auto;
@@ -193,7 +260,7 @@ body {
 
 .user-projects {
   margin: 40px auto;
-  img {
+  img.prominent {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
@@ -217,7 +284,7 @@ body {
 }
 
 .project-link {
-  display: block;
+  display: inline-block;
   width: 100px;
   margin: 10px 0px;
   padding: 5px;
@@ -250,10 +317,50 @@ body {
   }
 }
 
+.projects-link {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px;
+  color: #fff;
+  background-color: $purple;
+  border: 1px solid $purple;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: normal;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  &:hover {
+    background-color: transparent;
+    border-color: $main;
+    color: $main;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+  &:active {
+    background-color: transparent;
+    border-color: $main;
+    color: $main;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+}
+
 .footer {
   background: $main;
+  position: fixed;
+  display: initial;
+  width: 100%;
+  bottom: 0;
+  z-index:-1;
   padding: 10px 0;
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
   color: #FFF;
   .love {
@@ -270,4 +377,73 @@ body {
       color: $sec;
     }
   }
+}
+
+.navigation {
+  //position: fixed;
+  background: $main;
+  padding: 10px 0;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #FFF;
+  a {
+    padding-left: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0;
+    color: #FFF;
+    &:hover{
+      color: $sec;
+    }
+    &:active {
+      color: $sec;
+    }
+  }
+}
+
+// mobile
+@media only screen and (max-width:$cut) {
+     .activitytable tr {
+       display: table;
+       width: 100%;
+       border-bottom: 1px solid #E1E1E1;
+     }
+     .activitytable td {
+       display: table-row;
+     }
+
+     .activitytable {
+       .secondcolumn {
+         font-weight: bold;
+       }
+       .linktext {
+         font-size: 0.7em;
+         padding-left: 5px;
+         display: inline;
+       }
+       .icon-link {
+         border-radius: 5px;
+         padding: 5px;
+       }
+     }
+
+     .timelabel {
+       display: inline;
+     }
+ }
+
+// desktop
+@media only screen and (min-width:$cut) {
+  .activitytable  {
+    .firstcolumn {
+      text-align: right;
+    }
+    .timelabel {
+      display: none;
+    }
+    .linktext {
+      display: none;
+    }
+  }
+
 }

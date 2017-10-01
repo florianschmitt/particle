@@ -1,0 +1,42 @@
+- id: connection
+  title: Konzeption und Realisierung einer Kotlin und Angular-basierten Webanwendung zur Anfragenverwaltung
+  time: 04/2017 – andauernd (ehrenamtlich)
+  task: Konzeption, Softwarearchitektur, Entwicklung
+  description: Konzeption und Implementierung eines webbasierten Systems zum Anfragen-Management ehrenamtlicher Sprachbegleiter eines sozialen Vereins. Anwendungsserver für Bereitstellung einer REST-Schnittstelle realisiert auf Basis von Spring Boot, Implementierung mittels Kotlin. Realisierung von automatisierten Schnittstellentests.  Anfrageformular und Verwaltungsportal mit Angular 4 implementiert. Deployment in Heroku-Cloud. Open Source Projekt.
+  tech: Java 9, Kotlin 1.1, Spring 5, Spring Boot 2, Spring Data JPA 2, Hibernate 5, JUnit 5, Angular 4, HTML/CSS, IntelliJ IDEA, Gradle 4, Git, Heroku
+  area: Soziales Engagement
+- id: prozessprotokoll
+  title: Konzeption und Realisierung einer Java-basierten Desktop-Anwendung zur Protokollierung von Gerichtsverfahren
+  time: 10/2016 – 09/2017
+  task: Konzeption, Softwarearchitektur, Entwicklung
+  description: Konzeption und Umsetzung einer plattformunabhängigen Desktop-Anwendung zur Protokollierung von laufenden Gerichtsverfahren für Rechtsanwälte. Funktionalität umfasst unter anderem Erfassung von Protokollpunkten durch Rich-Text-Editor, dynamische Kennzeichnung von Textstellen mittels Themen, PDF-Export und Druckmöglichkeit.
+  tech: Java 8, JavaFX, Spring 4, Spring Boot 1.5, Spring Data JPA 1.11, Hibernate 5, HTML/CSS, IntelliJ IDEA, Gradle, Git
+  area: Rechtsdienstleistungen
+- id: evita
+  title: Konzeption und Realisierung einer Java-basierten Web-Anwendung (Vaadin, GWT) für SaaS-Dokumentations- und Unterstützungssystem
+  time: 05/2016 – 09/2017
+  task: Konzeption, Entwicklung, Softwarearchitektur
+  description: Umsetzung einer datenbankgestützten Webanwendung auf Basis von Vaadin und GWT zur Unterstützung von Prüf- und Dokumentationspflichten. Das System unterstützt Unternehmen als SaaS-Lösung, indem es notwendige Prüfungen und Maßnahmen plant, steuert und koordiniert sowie automatisiert die vorgeschriebenen Dokumentationen erzeugt und bereithält. UI-Konzeption und Entwicklung einer Frontend-Anwendung mit responsivem Design. Die mehrmandantenfähige Anwendung ermöglicht die Einrichtung von Microsites zur Nutzung als Software as a Service. Steuerung und Koordination erfolgt teilweise auch über Mobile-App, die via REST-API mit dem System kommuniziert. Einrichtung von kontinuierlicher Integration, UI-Tests und Verteilung mittels Gradle, Selenium und Jenkins.
+  tech: Java 8, Vaadin 8.1, GWT 2.8, Spring 4, Spring Boot 1.5, EclipseLink (JPA), HTML/CSS, Eclipse, Gradle, Git, Jenkins
+  area: Glücksspiel
+- id: ngop
+  title: Migration des Erstellungsprozesses eines hierarchischen Multimodul-Projekts von Maven auf Gradle
+  time: 11/2015 – 12/2015
+  task: Einrichtung Entwicklungsumgebung, Migration Erstellungsprozess
+  description: 	Projektübernahme eines Multimodul-Projekts basierend auf Maven. Umstellung des Erstellungsprozesses auf Gradle. Einrichtung der Eclipse Entwicklungsumgebung.
+  tech: Java 8, Vaadin 7, AngularJS, Eclipse, Maven, später Gradle, Git
+  area: Bauwirtschaft
+- id: sbs
+  title: Projektleitung, Beratung und Konzeption eines webbasierten ERP-Systems mit Mediendatenbank
+  time: 04/2015 – 12/2016
+  task: Technische Anforderungskonkretisierung, Konzeption, Softwarearchitektur, Entwicklung, Benchmarks, automatisierte Tests
+  description: Analyse des Bestandssystems, Beratung zu möglichen Entwicklungsphasen und deren Wirtschaftlichkeit, Bugfixing und Weiterentwicklung in der Programmiersprache Java mit dem Webentwicklungsframework JSF. Datenmodellierung mittels JPA, technischer Entwurf zur Umsetzung der ursprünglichen Anforderungen. Erweiterung der Anwendung durch neue Anforderungen. Realisierung und Optimierung von Datenbankabfragen mittels JPQL. Performanz-Verbesserungen durch Quelltext- und Datenbankoptimierungen. Automatisierte Migration der Bestandsdaten implementiert. Refactoring und Bugfixing in allen Schichten der Anwendung.
+  tech: Java EE, Java-Server-Faces, Apache PDFBox, Selenium, LDAP, Glassfish, Netbeans, Maven, Git
+  area: Öffentlich-rechtlicher Rundfunk
+- id: work
+  title: Konzeption, Software-Architektur und Implementierung einer webbasierten ERP-Software zur Unterstützung von Geschäftsprozessen
+  time: 04/2013 – 09/2017
+  task: Anforderungskonkretisierung, Datenmodellierung, Datenmigration, Softwarearchitektur, Qualitätssicherung, technische Beratung
+  description: Konzeption, Software-Architektur und Implementierung einer webbasierten Anwendung zur Unterstützung von Geschäftsprozessen von Unternehmen der Dienstleistungsbranche. Der Funktionsumfang umfasst Arbeitszeiterfassung, erweiterte Gleitzeitkontenrechnung, Beschäftigungsgruppen, HR-Modul mit Urlaub und Krankmeldungen, Feiertagskalender nach Bundesland / Abteilung, Projektverwaltung und -abrechnung, erweitertes Projektcontrolling, Import- und Export-Schnittstelle zum ERP-System Microsoft Navision. Das System verwaltet die Daten zentral auf einem Anwendungsserver mit relationalen Datenbankmanagementsystem wie MySQL, Microsoft SQL Server oder Oracle Database. Fokus auf sauberen Software-Architekturen und generischen Modellen, um dauerhaft gute Wart- und Erweiterbarkeit zu gewährleisten. Erstellung von dynamischen Web-Oberflächen mit hohem Konfigurationsmöglichkeiten und optimaler Usability. Refactoring und Bugfixing in allen Schichten der Anwendung. Einrichtung von kontinuierlicher Integration und Verteilung mittels Jenkins, Gradle und Sonatype Nexus.
+  tech: Java, Vaadin, Spring, GWT, JPA, Gradle, Eclipse, Git, Jenkins
+  area: Dienstleistung, Industrie, Maschinenbau
